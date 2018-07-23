@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../lib/internal/Magento/Framework/ObjectManager/etc/config.xsd">
+    <preference for="Plewandowski\CurrencyExchangeCalculator\Api\ExchangeRateRepositoryInterface" type="Plewandowski\CurrencyExchangeCalculator\Model\ResourceModel\ExchangeRateRepository" />
+    <preference for="Plewandowski\CurrencyExchangeCalculator\Api\Data\ExchangeRateInterface" type="Plewandowski\CurrencyExchangeCalculator\Model\ExchangeRate" />
+
+
+    <type name="Plewandowski\CurrencyExchangeCalculator\Model\ResourceModel\ExchangeRateRepository">
+        <arguments>
+            <argument name="exchangeRateClient" xsi:type="object">Plewandowski\CurrencyExchangeCalculator\Model\Client\Nbp\NbpClient</argument>
+        </arguments>
+    </type>
+
+    <type name="Plewandowski\CurrencyExchangeCalculator\Model\Client\Nbp\NbpClient">
+        <arguments>
+            <argument name="httpClient" xsi:type="object">GuzzleHttp\Client</argument>
+            <argument name="responseValidator" xsi:type="object">Plewandowski\CurrencyExchangeCalculator\Model\Client\Nbp\NbpResponseValidator</argument>
+        </arguments>
+    </type>
+</config>

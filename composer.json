@@ -1,0 +1,23 @@
+{
+  "name": "plewandowski/currency-exchange-calculator",
+  "description": "Currency exchange calculator for Magento 2",
+  "type": "magento2-module",
+  "license": "OSL-3.0",
+  "version": "1.0.0",
+  "authors": [
+    {
+      "name": "Piotr Lewandowski",
+      "email": "p.lewandowski@madcoders.pl"
+    }
+  ],
+  "minimum-stability": "stable",
+  "require": {},
+  "autoload": {
+    "files": [
+      "registration.php"
+    ],
+    "psr-4": {
+      "Plewandowski\\CurrencyExchangeCalculator\\": ""
+    }
+  }
+}

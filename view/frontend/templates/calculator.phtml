@@ -1,0 +1,26 @@
+<?php /** @var \Plewandowski\CurrencyExchangeCalculator\Block\Calculator $this */ ?>
+
+<section>
+    <form data-mage-init='<?php echo $this->getComponentDataJson() ?>' class="currency-exchange-calculator form">
+        <div class="block-title">
+            <strong id="block-heading" role="heading"><?php echo __('Calculator') ?></strong>
+        </div>
+
+        <div class="field amont-field">
+            <div class="control">
+                <input type="text" data-type="amount" name="amount" class="calculator-input lib-inline-column" placeholder="<?php echo $this->getCurrency() ?>" />
+            </div>
+        </div>
+        <div class="actions">
+            <button type="button" data-action="calculate" class="action primary"><?php echo __('calculate') ?></button>
+        </div>
+
+        <div class="field result-field">
+            <div class="control">
+                <input readonly type="text" data-type="result" class="calculator-result" placeholder="PLN" />
+            </div>
+        </div>
+
+        <div data-type="rate" class="calculator-rate"></div>
+    </form>
+</section>

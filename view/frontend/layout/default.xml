@@ -1,0 +1,12 @@
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <head>
+        <css src='Plewandowski_CurrencyExchangeCalculator::css/calculator.css'/>
+    </head>
+    <body>
+        <referenceContainer name="footer">
+            <block class="Plewandowski\CurrencyExchangeCalculator\Block\Calculator"
+                   name="footer.currency.exchange.calculator"
+                   template="Plewandowski_CurrencyExchangeCalculator::calculator.phtml"/>
+        </referenceContainer>
+    </body>
+</page>
