@@ -16,7 +16,10 @@ add following json to composer.json
 }
 ...
  "repositories": [
-    { "type": "vcs", "url": "https://github.com/plewandowski/m2-currency-exchange-calculator" }
+    { 
+        "type": "vcs", 
+        "url": "https://github.com/plewandowski/m2-currency-exchange-calculator" 
+    }
  ]
 }
 ```
